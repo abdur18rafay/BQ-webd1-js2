@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment4</title>
+</head>
+
+<body>
+    <script>
+        let name = prompt("Enter student's name : ");
+        let subj1 = parseFloat(prompt("Enter marks for Subject 1 (out of 100) :"));
+        let subj2 = parseFloat(prompt("Enter marks for Subject 2 (out of 100) :"));
+        let subj3 = parseFloat(prompt("Enter marks for Subject 3 (out of 100) :"));
+        let percent = ((subj1 + subj2 + subj3) / 300) * 100;
+        let grade;
+        if (percent >= 90) {
+            grade = " A+ ";
+        } else if (percent >= 80) {
+            grade = " A ";
+        } else if (percent >= 70) {
+            grade = " B ";
+        } else if (percent >= 60) {
+            grade = " C ";
+        } else if (percent >= 50) {
+            grade = " D ";
+        } else
+            grade = "Fail";
+    console.log("******************* MARKSHEET ******************");
+    console.log("Subject  \t\t Marks");
+    console.log(`Subject1 \t\t ${subj1}`);
+    console.log(`Subject2 \t\t ${subj2}`);
+    console.log(`Subject3 \t\t ${subj3}`);
+    console.log("******************* ********* ******************");
+    console.log(`Total ${subj1 + subj2 + subj3}`);
+    console.log(`Percentage ${percent.toFixed(2)} %`);
+    console.log(`Grade ${grade}`);
+
+
+
+    </script>
+</body>
+
+</html>
